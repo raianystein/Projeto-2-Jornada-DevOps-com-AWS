@@ -13,9 +13,9 @@ echo "Baixando a aplicação e descompactando..."
 cd /tmp
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 unzip main.zip
-rm main.zip
 
 echo "Copiando a aplicação para o diretório padrão do apache..."
-cp -R /tmp/linux-site-dio-main/* /var/www/html
+cd linux-site-dio-main
+cp -R * /var/www/html
 
 echo "Processo finalizado"
